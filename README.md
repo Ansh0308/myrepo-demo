@@ -1,4 +1,6 @@
 # myrepo-demo
 This is for demo.
+<br>
 Author-Ansh Raythatha
-This is for learing git/github
+<be>
+This is for learning git/github.
