@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Train Booking System AnyWays</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Train Route Finder</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <h1>Train Route Finder</h1>
+      <form id="train-form">
+        <label for="from-station">From Station:</label>
+        <select id="from-station">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <label for="to-station">To Station:</label>
+        <select id="to-station">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <button id="find-route">Find Route</button>
+      </form>
+      <div id="route-result"></div>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
+  <body>
+    <header>
+      <h1>Train Booking System AnyWays</h1>
+      <img src="pngwing.com (2).png" alt="Train Icon" width="50" height="50" />
+    </header>
+    <main>
+      <section class="search-trains">
+        <h2>Search for Trains</h2>
+        <form>
+          <label for="from-station">From Station:</label>
+          <input
+            type="text"
+            id="from-station"
+            name="from-station"
+            placeholder="Enter station name"
+          />
+          <label for="to-station">To Station:</label>
+          <input
+            type="text"
+            id="to-station"
+            name="to-station"
+            placeholder="Enter station name"
+          />
+          <label for="journey-date">Journey Date:</label>
+          <input type="date" id="journey-date" name="journey-date" />
+          <button type="submit">Search</button>
+        </form>
+        <img src="train.png" alt="Train Search Icon" width="30" height="30" />
+      </section>
+      <!-- No changes to the HTML code except for the intermediate-station section -->
+      <section class="intermediate-station">
+        <h2>Intermediate Station Options</h2>
+        <p>Choose how long you want to wait at the middle station:</p>
+        <label for="waiting-hours">Hours:</label>
+        <input
+          type="number"
+          id="waiting-hours"
+          name="waiting-hours"
+          min="0"
+          max="24"
+          value="0"
+        />
+        <label for="waiting-minutes">Minutes:</label>
+        <input
+          type="number"
+          id="waiting-minutes"
+          name="waiting-minutes"
+          min="0"
+          max="59"
+          value="0"
+        />
+        <p>Choose how far or near you want your station to be:</p>
+        <label for="station-distance">Distance (km):</label>
+        <input
+          type="number"
+          id="station-distance"
+          name="station-distance"
+          min="0"
+          max="1000"
+          value="0"
+        />
+        <img src="transport.png" alt="Station Icon" width="30" height="30" />
+      </section>
+      <section class="train-late-probability">
+        <h2>Train Late Probability</h2>
+        <p>Check the probability of the train being late:</p>
+        <button id="check-late-probability">Check</button>
+        <div id="late-probability-result"></div>
+        <img src="clock.png" alt="Clock Icon" width="30" height="30" />
+      </section>
+      <section class="journey-planner">
+        <h2>Journey Planner</h2>
+        <p>
+          If there is no direct train available, we can help you plan your
+          journey:
+        </p>
+        <button id="plan-journey">Plan Journey</button>
+        <div id="journey-plan-result"></div>
+        <img src="map.png" alt="Map Icon" width="30" height="30" />
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
